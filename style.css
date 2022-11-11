@@ -43,13 +43,19 @@ body {
 	background: white;
 	margin: auto;
 	border-radius: 10px;
-	opacity: 0.9;
+	opacity: 0.98;
 	line-height: 1.5;
 	}
+.tekst h1{
+	text-align: center;
+}
 .navriba .nimi{
 	color: white;
 	float: left;
 	margin-left: 30px;
 	font-size: 28px;
 	line-height: 100px;
+}
+.tekst .pildid{
+	text-align: center;
 }
