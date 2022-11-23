@@ -1,9 +1,8 @@
-function kalkulaator() {
-    var sada = raskus / (1.0278 - 0.278 * kordused)
-    var uheksakmnd = raskus / (1.0278 - 0.278 * kordused) * 0.9
-    var kaheksakmnd = raskus / (1.0278 - 0.278 * kordused) * 0.8
-    var seitsekmnd = raskus / (1.0278 - 0.278 * kordused) * 0.7
-    var kuuskmnd = raskus / (1.0278 - 0.278 * kordused) * 0.6
-    var viiskmnd = raskus / (1.0278 - 0.278 * kordused) * 0.5
-    window.location.href = 'tulemused.html'
+function kalkulaator(raskus, kordused) {
+
+    for (let i = 0; i < 12; i++) {
+        var muudetav = document.getElementById("th" + i.toString());
+        var vastus = Math.ceil(((raskus / (1.0278 - (0.0278 * kordused))) * (1 - 0.05 * i)) / 5) * 5;
+        muudetav.innerHTML = vastus.toString()
+    }
 }
