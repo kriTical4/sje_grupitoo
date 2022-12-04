@@ -59,3 +59,28 @@ body {
 .tekst .pildid{
 	text-align: center;
 }
+
+.tabel {
+	border: 1px solid;
+	width: 100% ;
+}
+
+
+.tegelik_nupp {
+	transition-duration: 0.4s;
+	background-color: black; /* Green */
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	
+}
+
+.tegelik_nupp:hover {
+	color: black;
+	background-color: white;
+	border-color: black;
+
+}
