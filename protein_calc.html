@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+	<title>Veebileht jõusaalist - CAK</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class ="navriba">
+		<ul>
+            <li><a href="index.html">ESILEHT</a></li>
+			<li><a href="kulturism.html">KULTURISM</a></li>
+			<li><a href="toitumine.html" href="#">TOITUMINE</a></li>
+            <li><a class="aktiivne" href="#">KALORITE KALKULAATOR</a></li>
+		</ul>
+		<div class = "nimi">
+			<p>CAK</p>
+		</div>
+	</nav>
+    <div class="tekst">
+		<h1 style= "text-align: center;">KALORITE KALKULAATOR</h1>
+        <form action="/action_page.php">
+        <br>
+        <!--Skript integreeritud veebilehelt verywellfit.com-->
+        <h4>Siin saad arvutada, kui palju kaloreid sa keskmiselt põletad iga päev:</h4>
+        <br>
+        <script type="text/javascript" async id="bmr-calculator" data-type="verywell-tool" data-vertical="verywellfit" src="https://www.verywellfit.com/static/4.333.0/components/tools/calculators/iframe-embed/embed.min.js?id=bmr-calculator%22%3E">
+        </script> 
+        </form> 
+        <script>
+            function myFunction() {
+              var x = document.getElementById("kg").value;
+              document.getElementById("demo").innerHTML = x*1.5;
+            }
+        </script>
+    </div>
+    
+</body>
